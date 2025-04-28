@@ -12,5 +12,5 @@ public class EvidenicijaVozila {
        vozila.add(vozilo);
     }
 
-
+    
 }

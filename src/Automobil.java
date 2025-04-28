@@ -2,7 +2,11 @@ public class Automobil extends Vozilo{
 
     private int brojVrata;
 
-    public Automobil(int brojVrata) {
+    public Automobil(int brojVrata) throws NeispravniPodatciException{
+
+        if(brojVrata<0){
+            throw new NeispravniPodatciException("Broj vrata ne moze biti negativan");
+        }
         this.brojVrata = brojVrata;
     }
 
@@ -10,7 +14,10 @@ public class Automobil extends Vozilo{
         return brojVrata;
     }
 
-    public void setBrojVrata(int brojVrata) {
+    public void setBrojVrata(int brojVrata)throws NeispravniPodatciException {
+        if(brojVrata<0){
+            throw new NeispravniPodatciException("Broj vrata ne moze biti negativan");
+        }
         this.brojVrata = brojVrata;
     }
 

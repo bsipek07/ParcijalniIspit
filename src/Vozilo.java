@@ -7,9 +7,12 @@ public class Vozilo {
     public Vozilo() {
     }
 
-    public void ucitajPodatke(String registarskaOznaka, String markaVozila, int godinaProizvodnje){
+    public void ucitajPodatke(String registarskaOznaka, String markaVozila, int godinaProizvodnje)throws NeispravniPodatciException{
         this.registarskaOznaka=registarskaOznaka;
         this.markaVozila=markaVozila;
+        if(godinaProizvodnje<=0){
+            throw new NeispravniPodatciException("Godina proizvodnje ne moze biti negativna");
+        }
         this.godinaProizvodnje=godinaProizvodnje;
     }
 
@@ -30,7 +33,10 @@ public class Vozilo {
         return godinaProizvodnje;
     }
 
-    public void setGodinaProizvodnje(int godinaProizvodnje) {
+    public void setGodinaProizvodnje(int godinaProizvodnje)throws NeispravniPodatciException {
+        if (godinaProizvodnje <= 0) {
+            throw new NeispravniPodatciException("Godina proizvodnje ne moze biti negativna");
+        }
         this.godinaProizvodnje = godinaProizvodnje;
     }
 

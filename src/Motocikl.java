@@ -20,4 +20,11 @@ public class Motocikl extends Vozilo {
                 "\nMarka vozila: "+getMarkaVozila()+"\nGodina proizvodnje: "+getGodinaProizvodnje()+
                 "\nTip motora: "+tipMotora);
     }
+
+    @Override
+    public String voziloToString() {
+        return "\nVozilo{"+"\nRegistarska oznaka vozila: "+getRegistarskaOznaka()+
+                "\nMarka vozila: "+getMarkaVozila()+"\nGodina proizvodnje: "+getGodinaProizvodnje()+
+                "\nTip motora: "+tipMotora+" }";
+    }
 }

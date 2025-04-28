@@ -27,4 +27,13 @@ public class Automobil extends Vozilo{
                 "\nMarka vozila: "+getMarkaVozila()+"\nGodina proizvodnje: "+getGodinaProizvodnje()+
                 "\nBroj vrata: "+brojVrata);
     }
+
+    @Override
+    public String voziloToString() {
+        return "\nVozilo{"+"\nRegistarska oznaka vozila: "+getRegistarskaOznaka()+
+                "\nMarka vozila: "+getMarkaVozila()+"\nGodina proizvodnje: "+getGodinaProizvodnje()+
+                "\nBroj vrata: "+brojVrata+" }";
+    }
+
+
 }

@@ -1,4 +1,4 @@
-public class Vozilo {
+public abstract class Vozilo {
 
     private String registarskaOznaka;
     private String markaVozila;
@@ -47,4 +47,7 @@ public class Vozilo {
     public void setMarkaVozila(String markaVozila) {
         this.markaVozila = markaVozila;
     }
+
+    public abstract String voziloToString();
+
 }

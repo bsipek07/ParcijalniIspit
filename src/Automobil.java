@@ -10,6 +10,7 @@ public class Automobil extends Vozilo{
         this.brojVrata = brojVrata;
     }
 
+
     public int getBrojVrata() {
         return brojVrata;
     }
@@ -30,9 +31,9 @@ public class Automobil extends Vozilo{
 
     @Override
     public String voziloToString() {
-        return "\nVozilo{"+"\nRegistarska oznaka vozila: "+getRegistarskaOznaka()+
-                "\nMarka vozila: "+getMarkaVozila()+"\nGodina proizvodnje: "+getGodinaProizvodnje()+
-                "\nBroj vrata: "+brojVrata+" }";
+        return "\nVozilo{"+" Registarska oznaka vozila: "+getRegistarskaOznaka()+
+                " Marka vozila: "+getMarkaVozila()+" Godina proizvodnje: "+getGodinaProizvodnje()+
+                " Broj vrata: "+brojVrata+" }";
     }
 
 

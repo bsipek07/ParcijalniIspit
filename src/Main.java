@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 
 public class Main {
@@ -22,6 +23,10 @@ public class Main {
         listaVozila.dodajVozilo(m2);
 
         listaVozila.spremiPodatkeUDatoteku();
+        File izvor = new File("C:/Users/PC/Downloads/listaVozila.txt");
+        listaVozila.ucitajPodatkeUDatoteku(izvor);
+
+
 
     }
 }
